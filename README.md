@@ -1,6 +1,6 @@
 # CTA IP Address Fetch Tool
 
-A fancy web app for fetching IP data from a public API.
+A fancy web app for fetching IP data from a public API. Documentation is important!
 
 **Note**: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

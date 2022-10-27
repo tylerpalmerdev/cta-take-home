@@ -2,6 +2,8 @@
 
 A fancy web app for fetching IP data from a public API. Documentation is important!
 
+![Screenshot](https://github.com/tylerpalmerdev/cta-take-home/blob/main/public/Screen%20Shot%202022-10-27%20at%2011.23.56%20AM.png)
+
 **Note**: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -7,7 +7,7 @@
 .page-heading {
   color: #f4bcaf;
   background-color: gray;
-  padding: 5px;
+  padding: 10px;
 }
 
 .ip-form, .field-selector {
@@ -23,4 +23,8 @@
   background-color: rgb(172, 171, 171);
   padding: 25px;
   text-align: center;
+}
+
+.error-message {
+  color: red;
 }

@@ -4,7 +4,6 @@ import App from './App';
 
 afterEach(() => {
   // cleanup any fetch mocks
-  // @todo: cleanup
   if (typeof fetch.mockClear === 'function') {
     fetch.mockClear();
   }
@@ -85,7 +84,32 @@ it('allows user to enter IP address, fetch data, and select field as expected', 
   expect(screen.getByText(/value2/)).toBeInTheDocument();
 });
 
-it.todo('handles a server error as expected');
+test('handles a server error as expected', async() => {
+  // when fetch is mocked to fail
+  global.fetch = jest.fn(() =>
+    Promise.reject({})
+  );
+
+  const testIp = '123.45.67.89';
+
+  // and the app renderes
+  render(<App />);
+
+  // and the user enters an IP address and submits
+  const ipInput = screen.getByLabelText('Enter an IP address:');
+  await fireEvent.change(ipInput, { target: { value: testIp }});
+  await fireEvent.click(screen.getByRole('button', { name: 'Fetch Data' }));
+
+  await fireEvent.click(screen.getByRole('button', { name: 'Fetch Data' }));
+
+  // @todo: update test to fix console.error regarding `act()` recommendation
+  await waitFor(() => {
+    // then an error message is shown
+    expect(screen.getByRole('heading', { name: 'An error has occurred' })).toBeInTheDocument();
+  });
+});
+
+it.todo('allows user to enter a new IP address and re-fetch as expected');
 
 it.todo('handles a 200 response with an error status field as expected');
 

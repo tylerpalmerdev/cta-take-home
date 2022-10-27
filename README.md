@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# CTA IP Address Fetch Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fancy web app for fetching IP data from a public API.
+
+**Note**: This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

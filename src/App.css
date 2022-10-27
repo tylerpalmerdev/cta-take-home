@@ -3,3 +3,24 @@
   flex-flow: column;
   align-items: center;
 }
+
+.page-heading {
+  color: #f4bcaf;
+  background-color: gray;
+  padding: 5px;
+}
+
+.ip-form, .field-selector {
+  margin-bottom: 20px;
+}
+
+.ip-form__input, .ip-form__button, .field-selector {
+  margin-left: 10px;
+}
+
+.display-area {
+  border: 1px solid black;
+  background-color: rgb(172, 171, 171);
+  padding: 25px;
+  text-align: center;
+}
